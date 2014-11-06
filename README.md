@@ -38,40 +38,40 @@ wsgiref==0.1.2
 
 ### download
 
-    `$ git clone https://github.com/rendrom/django-dynamit.git`
-    `$ cd ./django-dynamit`
+    $ git clone https://github.com/rendrom/django-dynamit.git
+    $ cd ./django-dynamit
     
 ### virtualenv
 
-    `$ virtualenv --distribute ./.env`
-    `$ . ./.env/bin/activate`
+    $ virtualenv --distribute ./.env
+    $ . ./.env/bin/activate
     
 ### Requirements
 
-    `$ pip install -r ./requirements.txt`
+    $ pip install -r ./requirements.txt
     
 ### Install the frontend code
 
 To setup and run the sample code, you're going to need `npm` from NodeJS available to install the frontend code.
 
-    `$ npm install -g grunt-cli bower`
-    `$ npm install`
-    `$ bower install`
+    $ npm install -g grunt-cli bower
+    $ npm install
+    $ bower install
     
 ### Local Settings
 
 Create `local_settings.py` and modify necessary changes
 
-    `$ cp ./prj/local_settings.py.template ./prj/local_settings.py`
+    $ cp ./prj/local_settings.py.template ./prj/local_settings.py
     
 ### Initialize the database
 
-    `$ ./manage.py migrate`
-    `$ make superuser`
+    $ ./manage.py migrate
+    $ make superuser
     
 ### Run the Server
 
-    `$ ./manage.py runserver`
+    $ ./manage.py runserver
     
 ## Demonstration
 
