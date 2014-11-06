@@ -7,20 +7,19 @@ Based on [dynamo](https://bitbucket.org/mhall119/dynamo/)
 
 The sample application comes with:
 
-* "jquery": "2.1.1",
-* "jquery-form": "3.46.0",
-* "angular": "1.2.x",
-* "angular-mocks": "~1.2.x",
-* "angular-route": "~1.2.x",
-* "angular-resource": "~1.2.x",
-* "angular-animate": "~1.2.x",
-* "underscore": "1.6.0",
-* "bootstrap": "3.2.0",
-* "bootstrap-fileinput": "2.1.0",
-* "bootstrap-growl": "~2.0.1",
-* "modernizr": "2.8.3",
-* "font-awesome": "4.1.0",
-* "animate.css": "3.2.0"
+```
+"jquery": "2.1.1",
+"angular": "1.2.x",
+"angular-mocks": "~1.2.x",
+"angular-route": "~1.2.x",
+"angular-resource": "~1.2.x",
+"underscore": "1.6.0",
+"bootstrap": "3.2.0",
+"bootstrap-growl": "~2.0.1",
+"modernizr": "2.8.3",
+"font-awesome": "4.1.0",
+"animate.css": "3.2.0"
+```
 
 And its current `requirements.txt` file is:
 
