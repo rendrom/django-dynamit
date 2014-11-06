@@ -1,0 +1,35 @@
+{% load staticfiles %}
+<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Dynamic Models prj</h4>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-tabs" id="aboutTabs">
+                    <li class="active"><a data-target="#about" data-toggle="tab"><i class="fa fa-question-circle"></i>&nbsp;О проекте</a></li>
+                    <li><a data-target="#developers" data-toggle="tab"><i class="fa fa-smile-o"></i>&nbsp;Разработчики</a></li>
+                    <li><a data-target="#help" data-toggle="tab"><i class="fa fa-life-saver"></i>&nbsp;Помощь</a></li>
+                </ul>
+                <div class="tab-content" id="aboutTabsContent" style="padding-top: 10px;">
+                    <div class="tab-pane fade active in" id="about">
+                        <p>Репозиторий проекта <a href="https://bitbucket.org/rendrom/prj">django-dynamo</a></p>
+                    </div>
+                    <div id="help" class="tab-pane fade">
+                        <p>Проект "Dynamic models"</p>
+                        <p>Войти в систему Вы можете используя следующие имя и пароль:<br>
+                            <b>admin</b>: 1234<br>
+                            user: user</p>
+                    </div>
+
+                    <div class="tab-pane fade" id="developers">
+                        <p>Информация о разработчиках.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div><!-- /.modal -->

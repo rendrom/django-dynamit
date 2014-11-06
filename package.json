@@ -1,0 +1,12 @@
+{
+  "name": "dynamic_models",
+  "version": "0.1.0",
+  "devDependencies": {
+    "bower": "^1.3.11",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-ng-annotate": "^0.4.0",
+    "ng-annotate": "^0.10.1",
+    "yuglify": "^0.1.4"
+  }
+}

@@ -1,0 +1,71 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+body {
+  padding-top: 50px;
+}
+
+a {
+    cursor: pointer;
+}
+
+#sidebar-wrapper {
+    background: #161616;
+}
+
+.dynamo-table .input-group {
+    width: 200px;
+
+}
+
+
+
+.table-hiden-ico {
+    display: none;
+}
+
+.table-row:hover .table-hiden-ico, .table-row.hover .table-hiden-ico {
+    display: inline;
+}
+
+.service-clmn {
+    width: 20px;
+}
+
+
+
+/* =============================================================================
+   ANIMATION
+   ========================================================================== */
+
+
+.animate-item.ng-enter {
+  -webkit-animation: fadeIn .5s;
+  -moz-animation: fadeIn .5s;
+  -ms-animation: fadeIn .5s;
+  animation: fadeIn .5s;
+}
+
+/*TODO: попутно анимировать блок*/
+/*.animate-item.ng-leave {*/
+  /*-webkit-animation: fadeOut .5s;*/
+  /*-moz-animation: fadeOut .5s;*/
+  /*-ms-animation: fadeOut .5s;*/
+  /*animation: fadeOut .5s;*/
+/*}*/
+
+.animate-item.ng-move {
+  -webkit-animation: fadeOut .5s;
+  -moz-animation: fadeOut .5s;
+  -ms-animation: fadeOut .5s;
+  animation: fadeOut .5s;
+}
+
+.menu-item.ng-hide-remove {
+  -webkit-animation: tada 1s;
+  -moz-animation: tada 1s;
+  -ms-animation: tada 1s;
+  animation: tada 1s;
+}

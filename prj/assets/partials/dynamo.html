@@ -1,0 +1,25 @@
+<div class="panel panel-default">
+    <!-- Table -->
+      <table class="table table-bordered table-responsive dynamo-table ">
+        <thead>
+          <tr>
+            <th ng-show="authState.user"></th>
+            <th ng-repeat="h in verbosename">{$h$}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="fields in dynamo" class="animate animate-item">
+            <td ng-show="authState.user" class="service-clmn"><a href="" ng-click="deleteRow(fields)"><i class="fa fa-trash-o" style="color: #ff0000"></i></a></td>
+            <td ng-repeat="(key,value) in fields" class="table-row">
+                  <div click-to-edit="value"  data-dynamo-type="{$fieldtype[key]$}" data-dynamo-name="{$verbosename[key]$}"></div>
+            </td>
+          </tr>
+          <tr ng-show="authState.user">
+            <td class="service-clmn"><a href="" ng-click="createNew()"><i class="fa fa-plus-square-o " style="color: green"></i></a></td>
+            <td class="new-feature" ng-repeat="(fn, vn) in verbosename">
+                <div get-input="fieldtype[fn]"></div>
+            </td>
+          <tr>
+        </tbody>
+      </table>
+</div>

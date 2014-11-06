@@ -1,0 +1,108 @@
+{% load i18n %}
+{% load compress %}
+{% load staticfiles %}
+
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="{% block meta_description %}{% endblock %}">
+    <meta name="author" content="{% block meta_author %}{% endblock %}">
+    <meta name="viewport" content="width=device-width">
+
+    <title>{% block page_title %}Dynamic Models{% endblock %}</title>
+
+    <link rel="shortcut icon" sizes="40x40" href="{% static 'favicon.png' %}">
+
+
+    {% block meta %}{% endblock %}
+
+
+    {% block cdn_css %}{% endblock cdn_css %}
+
+
+    {% compress css %}
+        {% block css %}
+            <link rel="stylesheet" href="{% static 'libs/bootstrap/dist/css/bootstrap.css' %}">
+            <link rel="stylesheet" href="{% static 'libs/animate.css/animate.min.css' %}">
+            <link rel="stylesheet" href="{% static 'libs/font-awesome/css/font-awesome.css' %}">
+        {% endblock %}
+    {% endcompress %}
+
+    {% block css_uncompress %}{% endblock %}
+
+    {% block cdn_js %}
+    {% endblock %}
+
+    {% compress js %}
+        {% block js_header %}
+        <script src="{% static 'libs/modernizr/modernizr.js' %}"></script>
+        <script src="{% static 'libs/angular/angular.min.js' %}"></script>
+        <script src="{% static 'libs/angular-animate/angular-animate.min.js' %}"></script>
+        <script src="{% static 'libs/angular-route/angular-route.min.js' %}"></script>
+        <script src="{% static 'libs/angular-resource/angular-resource.min.js' %}"></script>
+        {% endblock %}
+    {% endcompress %}
+
+{#    <base href="/">#}
+
+</head>
+<body class="{% block body_class %}{% endblock %}" {% block body_attributes %}{% endblock %}>
+
+{% block body %}
+    <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+         chromium.org/developers/how-tos/chrome-frame-getting-started -->
+    <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+
+
+    {% block header %}{% endblock %}
+
+
+    {% block content %}{% endblock %}
+
+
+    {% compress js %}
+        {% block js %}
+            <script src="{% static 'libs/jquery/dist/jquery.min.js' %}"></script>
+            <script src="{% static 'libs/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+        {% endblock js %}
+    {% endcompress %}
+
+    {% compress js %}
+    {% block app_js %}
+        <script src="{% static 'js/plugins.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+        {% if messages %}
+        {% for message in messages %}
+            <script>
+                $.growl('{{ message }}',
+                        {
+                            delay: 0,
+                            type: {% if message.tags %}'{{ message.tags }}'{% else %}'info'{% endif %},
+                            offset: 60,
+                            placement: {
+                                align: 'center'
+                            },
+                            animate: {
+                                enter: 'animated fadeInRight',
+                                exit: 'animated fadeOutRight'
+                            }
+                        });
+            </script>
+        {% endfor %}
+    {% endif %}
+    {% endblock %}
+    {% endcompress %}
+
+{% endblock %}
+
+</body>
+</html>

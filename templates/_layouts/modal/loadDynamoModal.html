@@ -1,0 +1,33 @@
+<div class="modal fade" id="loadDynamoModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Загрузить схемы моделей из файла</h4>
+            </div>
+            <form id="uploadForm" action="#" method="post" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <p>Важная информация</p>
+                </div>
+                <div class="modal-body">
+                <fieldset>
+                    <div class="form-group">
+                        <input id="fileInput" name="upload" type="file" class="file" title="Выберите файл">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                          <input id="update-dynamo" type="checkbox"> Обновлять существующие модели?
+                        </label>
+                    </div>
+
+
+                </fieldset>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+                    <button type="submit" class="btn btn-primary">Загрузить</button>
+                </div>
+            </form>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

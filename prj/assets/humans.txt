@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    GISPRO -- developers -- www.gispro.ru
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    Python, Django, JS
+    HTML5, CSS3
+    GIS
+
