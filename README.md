@@ -75,5 +75,5 @@ Create `local_settings.py` and modify necessary changes
     
 ## Demonstration
 
-* Demo server - [Demo]('http://geonote.ru/dynamo')
-* Video - [YouTube]('http://youtu.be/uwjknqwZDqE?list=UUXcVKbtnzWyuejxvuvLndZg')
+* Demo server - [http://geonote.ru/dynamo](http://geonote.ru/dynamo)
+* Video - [http://youtu.be/uwjknqwZDqE?list=UUXcVKbtnzWyuejxvuvLndZg](http://youtu.be/uwjknqwZDqE?list=UUXcVKbtnzWyuejxvuvLndZg)
